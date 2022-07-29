@@ -1,0 +1,268 @@
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ $ youremail@example.com
+bash: $: command not found
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ ssh-keygen -t rsa -C "710568951@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+/c/Users/Administrator/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:cKHTjYHCS9ECqJnAJmef+E2DhkGT7ionf7CBrIzErB4 710568951@qq.com
+The key's randomart image is:
++---[RSA 3072]----+
+|.o++.o .o        |
+|+o=.= oo =       |
+|=* * *+ + .      |
+|+ + * o+         |
+|+o o o .S        |
+|.=+ . .          |
+|*E +             |
+|B.+ .            |
+|o=..             |
++----[SHA256]-----+
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTi3PrMQuG/mC0wm2ck+jX4x01VqstteEKEKgPwT6Nk0o1kxR2zueQDrY9KwZkLHycW622ofGfVDrfHFfFWphVKrShhectTXE+xFBNMTmbvC5IgmW060m9MGw4Yz7jwa6b2E9ivlMp8j0LVC14UgHmSmDx2IDxNLpyc2QovpwF5Y+dFyPzfRSga+I1i/7kjVOHYL2xliyTN4Daa1FfBywoP7JXGNaxVWYbduP+L40cpKTb6ZbekGodmTVINWkZ5OCPAocOiy6kGPWwPvEjVQPweH54CVeBW+TQ5U2AwVU4t8cUR1ZDRli2tx7jJyYqo5M9WQmaMyYQWTK91Kn+Ds0xr28kKEajAZJLYgl1oJwuRElZ0KFngAPSKGPe1x/OVq8rEcmhAP0AjnPPYBxnTSC/bJB5wm8cfVsQcOAoh0YAhMrGXGuphcHrH1CjJR/ka0j4499q8B6UIC2MzfUJi2cs1ydIXGfT8yqxc7zcgvQu8vWHWZ90B6CLE8Gj5JySO/U= 710568951@qq.com
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ ^C
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ ssh -T git@github.com
+Hi BLACK-SHEEP-WALL! You've successfully authenticated, but GitHub does not provide shell access.
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ git commit -m "测试添加文件py"
+fatal: not a git repository (or any of the parent directories): .git
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ git pull origin main
+fatal: not a git repository (or any of the parent directories): .git
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ fatal: not a git repository (or any of the parent directories): .git
+bash: syntax error near unexpected token `('
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207
+$ git init
+Initialized empty Git repository in E:/Liu_Github_202207/.git/
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (master)
+$ git add .
+warning: adding embedded git repository: TEST_202207
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> TEST_202207
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached TEST_202207
+hint:
+hint: See "git help submodule" for more information.
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (master)
+$ git pull origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (master)
+$ ^C
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (master)
+$ git branch -m master main
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git commit -m "测试添加文件py"
+[main (root-commit) a045873] 测试添加文件py
+ 1 file changed, 1 insertion(+)
+ create mode 160000 TEST_202207
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git branch
+* main
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git push -u TEST_202207 main
+To TEST_202207
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'TEST_202207'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git add .
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git commit -m "测试添加文件py"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   TEST_202207 (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git init
+Reinitialized existing Git repository in E:/Liu_Github_202207/.git/
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ ssh -T git@github.com
+Hi BLACK-SHEEP-WALL! You've successfully authenticated, but GitHub does not provide shell access.
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ git add .
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207 (main)
+$ cd TEST_202207
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207/TEST_202207 (main)
+$ git init
+Reinitialized existing Git repository in E:/Liu_Github_202207/TEST_202207/.git/
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207/TEST_202207 (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207/TEST_202207 (main)
+$ git add .
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207/TEST_202207 (main)
+$ git commit -m "测试添加文件py"
+[main a9955e9] 测试添加文件py
+ 1 file changed, 3 insertions(+)
+ create mode 100644 test.py
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207/TEST_202207 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:BLACK-SHEEP-WALL/TEST_202207.git
+   cab8701..a9955e9  main -> main
+
+Administrator@JC60 MINGW64 /e/Liu_Github_202207/TEST_202207 (main)
+$
